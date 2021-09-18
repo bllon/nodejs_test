@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>管理员登录</title>
+		<link rel="stylesheet" type="text/css" href="../css/login.css"/>
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	</head>
+	<body>
+		<div class="con">
+			<div class="login">
+				<h3>管理员登录界面</h3>
+				<div class="wrap">
+					<form action="../login.php" method="post">
+						<ul>
+							<li>
+								<div class="user">
+									账 号:<input type="text" name="user" maxlength="12"/>
+								</div>
+							</li>
+							<li>
+								<div class="user">
+									密 码:<input type="password" name="password" maxlength="12"/>
+								</div>
+							</li>
+							<li>
+								<div class="number">
+									验 证 码:<input type="text" name="imgcode" maxlength="4"/>
+								</div>
+								<div class="img">
+									<img src="http://localhost:8081/qs/yanzhenma.php" 
+										onclick="javascript:this.src='http://localhost:8081/qs/yanzhenma.php'"/>
+								</div>
+							</li>
+							<li>
+								<div class="but">
+									<input type="submit" value="登录"/>
+								</div>
+							</li>
+						</ul>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

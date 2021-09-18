@@ -1,0 +1,173 @@
+*{
+	margin:0;
+	padding:0;
+	text-decoration:none;
+	list-style:none;
+}
+
+.top{
+	width:1200px;
+	height:200px;
+	margin:0px auto;
+	background:#000;
+}
+.top h3{
+	width:1200px;
+	height:100px;
+	text-align:center;
+	line-height:100px;
+	color:red;
+	font-size:30px;
+	letter-spacing:5px;
+}
+.top p{
+	width:1200px;
+	height:100px;
+	text-align:center;
+	color:green;
+	font-size:25px;
+	letter-spacing:1px;
+}
+.nav{
+	width:1200px;
+	height:40px;
+	margin:0px auto;
+	margin-top:1px;
+	overflow:hidden;
+}
+.menu{
+	width:1200px;
+	height:40px;
+	margin:0px auto;
+	background:gray;
+}
+.menu li{
+	width:200px;
+	height:40px;
+	float:left;
+	margin-left:20px;
+	background:#000;
+	color:#fff;
+	text-align:center;
+	line-height:40px;
+	letter-spacing:2px;
+	cursor:pointer;
+	font-size:14px;
+}
+.menu li:hover{
+	color:#fff;
+}
+
+.content{
+	width:1200px;
+	height:400px;
+	margin:0px auto;
+	
+}
+.content .box{
+	width:1200px;
+	height:200px;
+	background:red;
+	position:absolute;
+	display:none;
+	z-index: 1;
+}
+
+.box ul{
+	width:1000px;
+	height:180px;
+	margin-top:10px;
+	margin-left:20px;
+	overflow:hidden;
+}
+.box ul li{
+	width:200px;
+	height:40px;
+	margin-top:20px;
+	margin-left:5px;
+	float:left;
+}
+.box ul li a{
+	display:block;
+	width:200px;
+	height:40px;
+	text-align:center;
+	line-height:40px;
+	font-size:16px;
+	letter-spacing:2px;
+	color:#fff;
+}
+.box ul li a:hover{
+	color:gold;
+	background:green;
+	cursor:pointer;
+}
+
+.frame{
+	width:1200px;
+	height:500px;
+}
+.frame .wrap{
+	width:1198px;
+	height:498px;
+	border:1px solid gray;
+	position:absolute;
+	display:none;
+}
+.frame .lab-main{
+	display:block;
+}
+
+.lab-main .main-left{
+	width:299px;
+	height:498px;
+	border-right:1px solid gray;
+	float:left;
+}
+.lab-main .main-right{
+	width:898px;
+	height:498px;
+	float:right;
+}
+.main-left h3{
+	width:299px;
+	height:40px;
+	margin-top:30px;
+	text-align:center;
+	line-height:40px;
+	background:#000;
+	color:red;
+}
+.main-left ul{
+	width:299px;
+	height:428px;
+}
+.main-left ul li{
+	width:299px;
+	height:50px;
+	margin-top:5px;
+}
+.main-left ul li a{
+	display:block;
+	width:249px;
+	height:50px;
+	text-align:center;
+	line-height:50px;
+	margin:0px 25px;
+	color:#000;
+	font-size:18px;
+}
+
+.main-right h3{
+	width:898px;
+	height:40px;
+	text-align:center;
+	line-height:40px;
+	margin-top:30px;
+}
+.main-right p{
+	width:810px;
+	height:378px;
+	margin:30px auto;
+	background:pink;
+}

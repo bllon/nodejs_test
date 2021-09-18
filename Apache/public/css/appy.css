@@ -1,0 +1,262 @@
+*{
+	margin:0px;
+	padding:0px;
+	text-decoration:none;
+	list-style:none;
+}
+
+/*顶部*/
+.top{
+	width:1000px;
+	height:200px;
+	margin:1px auto;
+	border:1px solid red;
+	border-radius:20px;
+}
+
+.top .logo-img{
+	width:400px;
+	height:200px;
+	float:left;
+	border-radius:20px 0 0 20px;
+}
+
+.logo-img img{
+	display:block;
+	width:400px;
+	height:200px;
+	border-radius:20px 0 0 20px;
+}
+
+.top-title{
+	width:400px;
+	height:100px;
+	background:#3f3f3f;
+	float:right;
+	border-radius:20px;
+}
+.top-title p{
+	width:360px;
+	height:60px;
+	font-size:40px;
+	font-weight:bold;
+	line-height:60px;
+	text-align:right;
+	letter-spacing:5px;
+	color:red;
+	padding:20px;
+	border-radius:20px;
+}
+/*内容*/
+.main{
+	width:1000px;
+	height:1400px;
+	margin:0px auto;
+	background:#3c3c3c;
+	border-radius:20px;
+	overflow:hidden;
+}
+.main .content{
+	width:950px;
+	height:1350px;
+	margin:25px;
+	border-radius:20px;
+	overflow:hidden;
+}
+
+.content form{
+	width:950px;
+	height:1350px;
+	background:gray;
+	
+}
+
+
+form h3{
+	width:950px;
+	height:80px;
+	text-align:center;
+	line-height:80px;
+	font-size:30px;
+	color:#fff;
+}
+
+form ul{
+	width:870px;
+	height:520px;
+	background:#3e3e3e;
+	margin:0px auto;
+	border-radius:10px;
+}
+
+form ul li{
+	width:180px;
+	height:80px;
+	margin-top:5px;
+	text-align:center;
+	line-height:80px;
+	color:#fff;
+	font-size:18px;
+	float:left;
+	margin-right:10px;
+	letter-spacing:2px;
+}
+
+form ul li input{
+	width:100px;
+	height:60px;
+	border:none;
+	outline:none;
+	font-size:25px;
+	font-weight:bold;
+	background:none;
+	color:#fff;
+	margin:5px 0;
+	border-bottom:1px solid #fff;
+}
+
+form ul li input:hover{
+	cursor:default;
+}
+form ul .long{
+	width:350px;
+	margin-right:80px;
+}
+form ul .short,.short1{
+	margin-right:100px;
+}
+form ul .short1 input{
+	width:20px;
+	height:20px;
+}
+form ul .short input{
+	display:block;
+	float:right;
+}
+.long input{
+	display:block;
+	width:230px;
+	float:right;
+}
+
+form .ideal{
+	width:900px;
+	height:400px;
+	margin:40px auto;
+	background:red;
+}
+.ideal h1{
+	width:900px;
+	height:50px;
+	color:#fff;
+	text-indent:10px;
+	line-height:50px;
+	letter-spacing:4px;
+}
+.ideal textarea{
+	width:900px;
+	height:350px;
+	font-size:30px;
+	font-weight:bold;
+	text-indent:10px;
+	outline:none;
+	background:#bbbbbb;
+}
+
+form p{
+	width:400px;
+	height:50px;
+	margin:20px auto;
+	border-radius:20px;
+}
+form p input{
+	display:block;
+	width:400px;
+	height:50px;
+	background:green;
+	border:0;
+	font-size:20px;
+	letter-spacing:5px;
+	color:#fff;
+	font-weight:bold;
+	cursor:pointer;
+	border-radius:20px;
+	outline:none;
+}
+form p input:hover{
+	color:red;
+}
+/*底部*/
+.footer{
+	height:230px;
+	background:#484c4f;
+	margin-top:10px;
+}
+.footer .footer-main{
+	height:229px;
+	margin-top:1px;
+	border-top:1px solid #a4a6a7;
+}
+
+.footer-main .footer-content{
+	width:1200px;
+	height:229px;
+	margin:0 auto;
+	opacity:0.5;
+}
+.footer-content .footer-img{
+	width:300px;
+	height:229px;
+	float:left;
+}
+.footer-img img{
+	display:block;
+	width:200px;
+	height:200px;
+	margin-top:20px;
+	margin-left:50px;	
+}
+
+.footer-content .footer-link{
+	width:450px;
+	height:229px;
+	float:left;
+}
+
+.footer-link ul{
+	width:400px;
+	height:140px;
+	margin:10px auto;
+	border-left:1px solid #000;
+	border-right:1px solid #000;
+	padding:30px 0;
+}
+
+.footer-link ul li{
+	width:100px;
+	height:50px;
+	text-align:center;
+	line-height:50px;
+	float:left;
+}
+.footer-link ul li a{
+	font-size:16px;
+	color:#fff;
+	font-weight:500;
+}
+
+.footer-content .footer-writer{
+	width:450px;
+	height:229px;
+	float:right;
+	position:relative;
+}
+.footer-writer .copy{
+	width:450px;
+	height:40px;
+	text-align:center;
+	line-height:40px;
+	color:red;
+	position:absolute;
+	bottom:0;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>后台管理</title>
+		<link rel="stylesheet" type="text/css" href="../css/notice_insert.css"/>
+	</head>
+	<body>
+		<div class="top">
+			<h3>助学天使管理系统</h3>
+			<p>Student Angel management system</p>
+		</div>
+		<div class="content">
+			<form id="form" action="../notice_insert.php" method="post">
+				<h3>新增公告</h3>
+				<p>公告名 :<input type="text" name="notice" id="notice" value="" /></p>
+				<div class="main">
+					内容:
+					<textarea name="title" id="title" cols="30" rows="10"></textarea>
+				</div>
+				<input class="but" type="submit" name="" id="submit" value="提交" />
+			</form>
+		</div>
+		
+	</body>
+	<script>
+		document.getElementById("form").onsubmit=function(){
+			if(document.getElementById("notice").value==""){
+				alert("公告名不能为空!");
+				return false;
+			}
+			if(document.getElementById("title").value==""){
+				alert("内容不能为空!");
+				return false;
+			}
+			return window.confirm("是否提交数据?");
+		}
+		
+		
+//		document.getElementById("form").onsubmit=function(){
+//			var div=document.createElement("div");
+//			div.style.position="absolute";
+//			div.style.width=400+"px";
+//			div.style.height=200+"px";
+//			div.style.background="red";
+//			div.style.top="50%";
+//			div.style.left="50%";
+//			div.style.transform="translate3d(-50%,-50%,0)";
+//			
+//			var p=document.createElement("p");
+//			p.style.width=300+"px";
+//			p.style.height=50+"px";
+//			p.innerHTML="是否提交数据？";
+//			p.style.position="absolute";
+//			p.style.top="30%";
+//			p.style.left="30%";
+//			p.style.fontSize=18+"px";
+//			
+//			var input1=document.createElement("input");
+//			input1.type="button";
+//			input1.value="是";
+//			input1.style.width=100+"px";
+//			input1.style.height=50+"px";
+//			input1.style.position="absolute";
+//			input1.style.top="60%";
+//			input1.style.left="20%";
+//			
+//			var input2=document.createElement("input");
+//			input2.value="否";
+//			input2.type="button";
+//			input2.style.width=100+"px";
+//			input2.style.height=50+"px";
+//			input2.style.position="absolute";
+//			input2.style.top="60%";
+//			input2.style.left="50%";
+//			document.getElementsByTagName("body")[0].appendChild(div);
+//			div.appendChild(input1);
+//			div.appendChild(input2);
+//			div.appendChild(p);
+//			
+//		}
+		
+		
+		
+	</script>
+</html>

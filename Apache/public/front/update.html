@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>后台管理</title>
+		<link rel="stylesheet" type="text/css" href="css/notice_delet.css"/>
+		<link rel="stylesheet" type="text/css" href="css/update.css"/>
+	</head>
+	<body>
+		<div class="top">
+			<h3>助学天使管理系统</h3>
+			<p>Student Angel management system</p>
+		</div>
+		<div class="content">
+			<h3>删除公告</h3>
+			<div class="main">
+				<div class="main-left">
+					<ul>
+						<?php if(empty($data)){echo "<li>暂无公告</li>";}
+							else{
+								for($i=0;$i<count($data);$i++){
+									echo "<li>
+										<div>&#xf1d6;</div>
+										<span>".$data[$i]['id']."</span><span>".
+											$data[$i]['name']."</span><span>".
+											$data[$i]['date']."</span>
+										<a href='update.php?id=".$data[$i]['id']."'>修改</a>
+										</li>";
+								}
+							}
+						?>
+					</ul>
+				</div>
+				<div class="main-right">
+					<ul>
+						<?php if(empty($data)){echo "<li>暂无公告</li>";}
+							else{
+								for($i=0;$i<count($data);$i++){
+									echo "<li>
+											<span>".strlen($data[$i]['content'])."字</span>
+										</li>";
+								}
+							}
+						?>
+					</ul>
+				</div>
+			</div>
+			<div class="right-box">
+				<form action="update.php<?php if(isset($_GET['id'])){echo '?id='.$_GET['id'];} ?>" method="post">
+					<h3>
+						<input type="text" name="notice_name" id="" value="<?php echo $retu['name'];?>" />
+					</h3>
+					<textarea name="notice_content" rows="" cols="" ><?php echo $retu['content']; ?></textarea>
+					<input type="submit" name="" id="" value="提交" />
+				</form>
+			</div>
+		</div>
+	</body>
+
+</html>

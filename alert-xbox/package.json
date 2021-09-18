@@ -1,0 +1,15 @@
+{
+  "name": "alert-xbox",
+  "version": "1.0.0",
+  "description": "简单好看的弹出框",
+  "main": "alert-xbox.js",
+  "scripts": {
+    "test": "start alert"
+  },
+  "keywords": [
+    "alert",
+    "alert-xbox"
+  ],
+  "author": "xubei",
+  "license": "ISC"
+}

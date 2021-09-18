@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>公告</title>
+		<link rel="stylesheet" type="text/css" href="css/notice.css" />
+	</head>
+	<body>
+		
+		<div class="top">
+			<div class="logo-img">
+				<img src="image/400x200.png"/>
+			</div>
+			<div class="logo-title">
+				<img src="image/logo_title.png"/>
+			</div>
+		</div>
+		
+		<div class="main">
+			<div class="content">
+				<?php if(isset($result)){ ?>
+				<h3><?php echo $result[0];?></h3>
+				<p><?php echo $result[1];?></p>
+				<?php }else{
+					echo "<span>系统出错!!!</span>";
+				} ?>
+			</div>
+		</div>
+		
+		
+		<div class="footer">
+			<div class="footer-main">
+				<div class="footer-content">
+					<div class="footer-img">
+						<img src="image/400x200.png"/>
+					</div>
+					<div class="footer-link">
+						<ul>
+							<li><a href="">百度</a></li>
+							<li><a href="">百度</a></li>
+							<li><a href="">百度</a></li>
+							<li><a href="">百度</a></li>
+							<li><a href="">百度</a></li>
+							<li><a href="">百度</a></li>
+							<li><a href="">百度</a></li>
+							<li><a href="">百度</a></li>
+							<li><a href="">百度</a></li>
+							<li><a href="">百度</a></li>
+							<li><a href="">百度</a></li>
+							<li><a href="">百度</a></li>
+						</ul>
+					</div>
+					<div class="footer-writer">
+						<div class="copy">
+							&copy;2018&Rho;&amp;&nbsp;&nbsp;助学天使团队
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

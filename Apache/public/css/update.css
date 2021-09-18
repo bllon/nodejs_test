@@ -1,0 +1,42 @@
+.content .main{
+	margin-left:50px;
+	float:left;
+}
+.content .right-box{
+	width:500px;
+	height:400px;
+	float:right;
+	margin-top:20px;
+	margin-right:20px;
+	border:1px solid gray;
+}
+.right-box form h3{
+	width:500px;
+	height:40px;
+	background:#000;
+}
+.right-box form h3 input{
+	display:block;
+	width:200px;
+	height:40px;
+	border:0;
+	text-align:center;
+	font-size:18px;
+	font-weight:bold;
+	margin:0px auto;
+}
+.right-box form textarea{
+	display:block;
+	width:400px;
+	height:250px;
+	font-size:18px;
+	font-weight:bold;
+	margin:20px auto;
+}
+.right-box form input:nth-child(3){
+	display:block;
+	width:70px;
+	height:40px;
+	background:green;
+	margin:10px auto;
+}

@@ -1,0 +1,128 @@
+*{
+	margin:0;
+	padding:0;
+	text-decoration:none;
+	list-style:none;
+}
+
+/*body,html{
+	width:100%;
+	height:100%;
+}*/
+.con{
+	width:100%;
+	height:100%;
+	position:absolute;
+	/*background:url(../image/12.jpg)no-repeat center/cover;*/
+	background:#aaaaaa;
+	/*background:linear-gradient(45deg,#6fc7b5 0%,#13bdce 20%,#0094d9 40%,#5a3694 60%,#ee4d74 80%,#f58c58 100%);
+	background-position:0% 100%;
+	background-size:400%;
+	animation:gradient 4.5s ease-in-out infinite;*/
+}
+@keyframes gradient{
+	0%{
+		background-position:0% 100%;
+	}
+	50%{
+		background-position:100% 0%;
+	}
+	100%{
+		background-position:0% 100%;
+	}
+}
+.login{
+	width:500px;
+	height:350px;
+	background:linear-gradient(45deg,#6fc7b5 0%,#13bdce 20%,#0094d9 40%,#5a3694 60%,#ee4d74 80%,#f58c58 100%);
+	background-position:0% 100%;
+	background-size:400%;
+	animation:gradient 7.5s ease-in-out infinite;
+	/*background:#000;*/
+	position:fixed;
+	left:50%;
+	top:50%;
+	transform:translate3d(-50%,-50%,0) rotate(0deg);
+}
+
+.login h3{
+	width:500px;
+	height:30px;
+	text-align:center;
+	line-height:30px;
+	letter-spacing:4px;
+	text-shadow:0 0 20px red;
+	color:#fff;
+}
+.login .wrap{
+	width:500px;
+	height:320px;
+}
+
+.wrap form{
+	width:500px;
+	height:320px;
+	overflow:hidden;
+}
+.wrap form ul{
+	width:400px;
+	height:250px;
+	margin:40px auto;
+	overflow:hidden;
+}
+.wrap form ul li{
+	width:400px;
+	height:40px;
+	margin-top:20px;
+	letter-spacing:2px;
+	color:#fff;
+}
+.wrap form ul li div{
+	height:40px;
+	line-height:40px;
+	padding:0 3px;
+	float:left;
+	font-size:18px;
+}
+.wrap form ul li div input{
+	display:block;
+	height:40px;
+	border:none;
+	background:gray;
+	float:right;
+	font-size:18px;
+	letter-spacing:2px;
+	text-indent:4px;
+}
+.wrap form ul li .user{
+	width:254px;
+}
+.wrap form ul li .user input{
+	width:200px;
+}
+.wrap form ul li .number{
+	width:190px;
+}
+.wrap form ul li .number input{
+	width:100px;
+}
+.wrap form ul li .img{
+	width:100px;
+	height:40px;
+	padding:0px;
+	background:#fff;
+	float:left;
+	margin-left:20px;
+}
+.wrap form ul li .but{
+	width:400px;
+}
+.wrap form ul li .but input{
+	width:200px;
+	color:#fff;
+	background:green;
+	float:none;
+	margin:0 auto;
+	cursor:pointer;
+	text-indent:0px;
+}

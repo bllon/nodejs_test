@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>助学天使</title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css" />
+	</head>
+
+	<body>
+		<!--顶部 开始-->
+		<div class="top">
+			<div class="logo-img">
+				<img src="./image/400x100.png"/>
+			</div>
+			
+			<div class="top-main">
+				<div class="logo-title">
+					<img src="./image/logo_title.png"/>
+				</div>
+				<div class="top-link">
+					<a href="./front/message.html">&#xf0e0;</a>
+					<a href="">助学天使</a>
+					|
+					<a href="">微博导航</a>
+					|
+					<a href="">加入收藏</a>
+				</div>
+				<div class="search">
+					<div class="s-icon">&#xf002;</div>
+					<input type="search" name="" id="wds" value="" placeholder="输入关键字"/>
+					<div class="go-icon">GO</div>
+					<ul id="tuijian"></ul>
+				</div>
+				<div class="top-nav">
+					<ul>
+						<li><a href="">百度</a></li>
+						<li><a href="">百度</a></li>
+						<li><a href="">新浪</a></li>
+						<li><a href="">腾讯</a></li>
+						<li><a href="">火狐</a></li>
+						<li><a href="">新浪</a></li>
+						<li><a href="">腾讯</a></li>
+						<li><a href="">火狐</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--顶部 结束-->
+		
+		<!--头部 开始-->
+		<div class="header">
+			<div class="nav">
+				<a href="">百度</a>
+				<a href="">百度</a>
+				<a href="">百度</a>
+				<a href="">百度</a>
+				<a href="">百度</a>
+			</div>
+		</div>
+		<!--头部 结束-->
+		
+		<!--轮播 开始-->
+		<div class="flash-wrap">
+			<ul class="imgwrap">
+				<li><a href=""><img src="./image/1.jpeg"/></a></li>
+				<li><a href=""><img src="./image/2.jpg"/></a></li>
+				<li><a href=""><img src="./image/3.jpg"/></a></li>
+				<li><a href=""><img src="./image/4.jpg"/></a></li>
+			</ul>
+			<div class="peve">
+				<span>1</span>
+				<span>2</span>
+				<span>3</span>
+				<span>4</span>
+			</div>
+		</div>
+		<!--轮播 结束-->
+		
+		<!--内容1 开始-->
+		<div class="main-one">
+			<div class="main-one-left">
+				<h3>最新资讯</h3>
+				<ul>
+					<?php for($i=0;$i<count($notice);$i++){ ?>
+						
+					<li>
+						<div class="title-icon">&#xf1d6;</div>
+						<?php echo "<a href='notice.php?id=".$notice[$i][0]."'>".$notice[$i][1]."</a>"; ?> 
+					</li>
+					<?php } ?>
+				</ul>
+			</div>
+			<div class="main-one-right">
+				<div class="main-one-img">
+					<canvas id="canvas1" width="200" height="200" background="red"></canvas>
+					<canvas id="canvas2" width="200" height="200" background="red"></canvas>
+				</div>
+				<div class="main-one-content">
+					<h3>奖励机制</h3>
+					<ul>
+						<li>
+							<div class="zhidu-icon">&#xf1d6;</div>
+							<a href=''>制度一</a>
+						</li>
+						<li>
+							<div class="zhidu-icon">&#xf1d6;</div>
+							<a href=''>制度二</a>
+						</li>
+						<li>
+							<div class="zhidu-icon">&#xf1d6;</div>
+							<a href=''>制度三</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--内容1 结束-->
+		
+		<!--内容2 开始-->
+		<div class="main-two">
+			<div class="main-two-left">
+				<h3>功能通道</h3>
+				<ul>
+					<li><a href="./front/login.html">管理员平台</a></li>
+					<li><a href="./front/appy.html">前往报名</a></li>
+					<li><a href="./front/xianShang.html">线上平台</a></li>
+					<li><a href="./front/xianXia.html">线下平台</a></li>
+					<li><a href="./front/dianshang.html">电商平台</a></li>
+				</ul>
+			</div>
+			<div class="main-two-right">
+				<h3>网友留言</h3>
+				<div class="ms">
+					<ul id='msg-content'>
+					<?php for($i=0;$i<count($message);$i++){ ?>
+							 <li>
+							 	<p> <?php echo $message[$i]['2']; ?> </p>
+							 	<div class='message'>
+									<span><?php echo $message[$i]['1']; ?></span>
+									<span><?php echo $message[$i]['3']; ?></span>
+								</div>
+							</li>
+					<?php } ?>
+					<li>
+						<p>ok啊！</p>
+						<div class="message">
+							<span>xxx</span>
+							<span>2018/6/2</span>
+						</div>
+					</li>
+					<li>
+						<p>吼吼吼吼吼!</p>
+						<div class="message">
+							<span>xxx</span>
+							<span>2018/6/2</span>
+						</div>
+					</li>
+					<li>
+						<p>啦啦啦啦啦绿绿绿绿绿绿绿绿绿绿绿绿绿绿绿</p>
+						<div class="message">
+							<span>xxx</span>
+							<span>2018/6/2</span>
+						</div>
+					</li>
+					<li>
+						<p>心疼老詹啊!</p>
+						<div class="message">
+							<span>xxx</span>
+							<span>2018/6/2</span>
+						</div>
+					</li>
+					<li>
+						<p>永远科比！</p>
+						<div class="message">
+							<span>xxx</span>
+							<span>2018/6/2</span>
+						</div>
+					</li>
+					<li>
+						<p>火箭总冠军!!!</p>
+						<div class="message">
+							<span>xxx</span>
+							<span>2018/6/2</span>
+						</div>
+					</li>
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		<!--内容2 结束-->
+		
+		<div class="showContainer">
+			<div id="left">&#xf0d9;</div>
+			<div class="content">
+				<h3>picture show</h3>
+				<ul class="showimg">
+					
+				</ul>
+			</div>
+			<div id="right">&#xf0da;</div>
+		</div>
+
+		<div class="main-bottom">
+			<div class="late-top">
+				<h3>助学天使的意义价值</h3>
+			</div>
+			<div class="late-left">
+				<p>“助学天使”的整体定位是整合政府、企业、民间组织及爱心
+					个人的捐款资金，对贫困地区的留守学生，城市中小学生进行
+					全程无盈利的线上、线下多形式、多途径的的助学活动。
+					现今中小学生规模庞大，数量将近两个亿，也应运而生了许多从中盈利的教育机构。
+				</p>
+			</div>
+			<div class="late-right">
+				<p>
+					助学天使的意义在于以“青春志愿行，共筑中国梦”为主题，
+					旨在改善现今大多数家庭对家中孩子的教育过度偏颇到学校
+					以外的非义务教育机构（辅导班，助学）的问题。助学活动
+					对象广泛:包括服务者和被服务者。服务者为全国范围内，
+					在高等全日制学历教育学校就学的学生（即在校大学生）；
+					被服务者为需要物质及精神帮助的中小学生及其家长。
+				</p>
+			</div>
+		</div>
+		
+		
+		<div class="footer">
+			<div class="footer-main">
+				<div class="footer-content">
+					<div class="footer-img">
+						<img src="./image/400x200.png"/>
+					</div>
+					<div class="footer-link">
+						<ul>
+							<li><a href="">百度</a></li>
+							<li><a href="">百度</a></li>
+							<li><a href="">百度</a></li>
+							<li><a href="">百度</a></li>
+							<li><a href="">百度</a></li>
+							<li><a href="">百度</a></li>
+							<li><a href="">百度</a></li>
+							<li><a href="">百度</a></li>
+							<li><a href="">百度</a></li>
+							<li><a href="">百度</a></li>
+							<li><a href="">百度</a></li>
+							<li><a href="">百度</a></li>
+						</ul>
+					</div>
+					<div class="footer-writer">
+						<div class="copy">
+							&copy;2018&Rho;&amp;&nbsp;&nbsp;助学天使团队
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="./js/jquery-3.3.1.min.js">
+		
+	</script>
+	<script src="./js/index.js"></script>
+	
+</html>
